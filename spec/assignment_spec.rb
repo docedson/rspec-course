@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'some array' do
   subject { [1, 2] }
 

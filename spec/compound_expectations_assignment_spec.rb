@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'compound assignments' do
   describe 'firetruck' do
     it 'has two substrings' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Hash do
   subject(:bob) do
     { a: 1, b: 2 }

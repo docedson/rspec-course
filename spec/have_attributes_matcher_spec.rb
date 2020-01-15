@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProfessionalWrestler
   attr_reader :name, :finishing_move
 

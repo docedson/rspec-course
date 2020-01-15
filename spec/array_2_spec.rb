@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Array do
   subject (:sally) { [1, 2] }
 
@@ -8,6 +10,6 @@ RSpec.describe Array do
   end
 
   it 'creates a new object for a new example' do
-    expect(sally).to eq( [1, 2] )
+    expect(sally).to eq([1, 2])
   end
 end

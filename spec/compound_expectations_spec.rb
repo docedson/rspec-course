@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 25 do
   it 'can test for multiple matchers' do
     # expect(subject).to be_odd
@@ -6,7 +8,7 @@ RSpec.describe 25 do
     expect(subject).to be_odd.and be > 20
   end
 
-  it { is_expected.to be_odd and be > 20 }
+  it { is_expected.to(be_odd) && (be > 20) }
 end
 
 RSpec.describe 'caterpillar' do
