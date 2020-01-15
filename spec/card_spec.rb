@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Card
   attr_accessor :rank, :suit
   def initialize(rank, suit)
@@ -16,7 +18,7 @@ RSpec.describe Card do
   end
 
   it 'has a suit' do
-    expect(card.suit).to eq ('Spades')
+    expect(card.suit).to eq 'Spades'
   end
 
   it 'has a custom error message' do

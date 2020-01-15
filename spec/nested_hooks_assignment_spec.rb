@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 RSpec.describe 'regular hooks' do
-  before(:context) do 
+  before(:context) do
     puts 'A'
   end
 
