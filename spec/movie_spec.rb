@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Actor
   def initialize(name)
     @name = name
@@ -9,11 +11,11 @@ class Actor
   end
 
   def act
-    "I love you, baby"
+    'I love you, baby'
   end
 
   def fall_off_ladder
-    "Call my agent! No way!"
+    'Call my agent! No way!'
   end
 
   def light_on_fire
@@ -37,6 +39,21 @@ class Movie
   end
 end
 
-actor = Actor.new('Brad Pitt')
-movie = Movie.new(actor)
-movie.start_shooting
+# actor = Actor.new('Brad Pitt')
+# movie = Movie.new(actor)
+# movie.start_shooting
+
+RSpec.describe Movie do
+  let(:stuntman) { double("Mr. Danger", ready?: true, act: "Any string at all", fall_off_ladder: "Sure! Let's do it", light_on_fire: true) }
+  subject { described_class.new(stuntman) }
+
+  describe '#start_shooting method' do
+    it 'expects an actor to do 3 actions' do
+      expect(stuntman).to receive(:ready?)
+      expect(stuntman).to receive(:act)
+      expect(stuntman).to receive(:fall_off_ladder)
+      expect(stuntman).to receive(:light_on_fire)
+      subject.start_shooting
+    end
+  end
+end
