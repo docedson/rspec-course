@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'include matcher' do
   describe 'hot chocolate' do
     it 'checks for substring inclusion' do

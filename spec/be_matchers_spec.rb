@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # falsy values --- false, nil
 # truthy values --- everything else
 

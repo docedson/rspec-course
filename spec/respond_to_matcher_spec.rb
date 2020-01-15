@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class HotChocolate
   def drink
     'Delicious'

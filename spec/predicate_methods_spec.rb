@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'predicate methods and predicate matchers' do
   it 'can be tested with Ruby methods' do
     result = 16 / 2

@@ -1,5 +1,6 @@
-RSpec.describe Array do
+# frozen_string_literal: true
 
+RSpec.describe Array do
   it 'should be able to add items' do
     expect(subject.length).to eq(0)
     subject.push('Some value')

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'all matcher' do
   it 'allows for aggregate checks' do
     # [5, 7, 9].each do |val|
