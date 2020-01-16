@@ -45,7 +45,7 @@ end
 # movie.start_shooting
 
 RSpec.describe Movie do
-  let(:stuntman) { double("Mr. Danger", ready?: true, act: "Any string at all", fall_off_ladder: "Sure! Let's do it", light_on_fire: true) }
+  let(:stuntman) { double('Mr. Danger', ready?: true, act: 'Any string at all', fall_off_ladder: "Sure! Let's do it", light_on_fire: true) }
   subject { described_class.new(stuntman) }
 
   describe '#start_shooting method' do
@@ -53,7 +53,7 @@ RSpec.describe Movie do
       # expect(stuntman).to receive(:light_on_fire).once
       # expect(stuntman).to receive(:light_on_fire).exactly(1).times
       expect(stuntman).to receive(:light_on_fire).at_most(1).times
-      
+
       # expect(stuntman).to receive(:act).twice
       # expect(stuntman).to receive(:act).exactly(2).times
       expect(stuntman).to receive(:act).at_least(2).times
